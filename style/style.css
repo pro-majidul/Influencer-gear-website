@@ -1,0 +1,243 @@
+/* poppins font family */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* inter font family */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    background: rgb(255, 255, 255);
+}
+
+
+
+/* shared style */
+
+.navbar , .banner {
+    margin: 0 120px;
+}
+
+main{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* header area style start here */
+header{
+    max-width: 1380px;
+    margin: 0 auto;
+}
+
+/* nav area style here */
+.brand-logo{
+    color: rgb(58, 58, 58);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list{
+    display:flex;
+}
+.list-item{
+    list-style: none;
+
+}
+.list-link{
+    text-decoration:none;
+    color: rgb(58, 58, 58);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-left: 2rem ;
+}
+
+/* banner area style here */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.banner-container{
+  width: 50%;
+
+}
+.banner-title{
+    width: 550px;
+    color: rgb(58, 58, 58);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.banner-text{
+    width: 528px;
+    color: rgb(58, 58, 58);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 12px 0;
+}
+
+.right-side{
+    background-image: url("../images/Circle\ design.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 95%;
+    height: 450px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-side > img{
+    width: 90%;
+}
+
+.btn-primary{
+    color: rgb(255, 255, 255);
+    padding: 10px 25px;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border-radius: 41px;
+    background: rgb(224, 44, 109);
+    margin: 30px 0;
+}
+
+
+/* web group section area style */
+.web-group{
+    width: 1110px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+hr{
+    margin: 20px 0 ;
+    background: linear-gradient(135.00deg, rgba(192, 204, 218, 0.1) 0%,rgba(192, 204, 218, 0.6) 50.378%,rgba(192, 204, 218, 0.1) 100%);
+}
+
+
+/* card section area style start here */
+
+.popular-container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: rgb(255, 255, 255);
+}
+
+.card-brand{
+    padding-top: 50px;
+    color: rgb(58, 58, 58);
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 70px;
+    text-align: center;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 50px;
+}
+.popular-card{
+    padding: 15px 17px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 8px ;
+}
+
+.card-price{
+    color: rgb(24, 25, 31);
+    font-size: 20px;
+    font-weight: 500;
+}
+.card-title{
+    color: rgb(24, 25, 31);
+    font-size: 22px;
+    font-weight: 600;
+    margin: 10px;
+}
+.card-text{
+    color: rgb(120, 120, 133);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 5px;
+}
+.card-rating{
+    color: rgb(251, 130, 0);
+    font-size: 10px;
+}
+span{
+    color: rgb(94, 99, 102);
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 7px;
+}
+
+
+
+
+
+
+/* responsive mobile style here */
+@media screen  and (max-width:576px){
+
+    .navbar , .banner {
+        margin: 0 0;
+    }
+
+    .navbar{
+        flex-direction: column;
+    }
+    .list-link{
+        margin-left: 1rem;
+    }
+
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-container{
+        width: 100%;
+        text-align: center;
+    }
+    .right-side{
+        width: 80%;
+    }
+    hr{
+        display: none;
+    }
+    .web-group{
+        width: 80%;
+        height: 100px;
+        flex-wrap: wrap;
+        margin: 30px auto;
+        gap: 30px;
+    }
+    .card-container{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        position: relative;
+    }
+    .card-images{
+        width:100%;
+    }
+    .card-images > img{
+        width: 100%;
+    }
+    .popular-card{
+        text-align: justify;
+
+    }
+    
+}
